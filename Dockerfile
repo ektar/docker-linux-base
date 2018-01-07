@@ -3,22 +3,24 @@ MAINTAINER eric@ds-do.com
 
 RUN apt-get update && apt install -qy \
     curl \
-	graphviz \
     emacs24-nox \
-    less \
+    git \
+    graphviz \
+    htop \
     iputils-ping \
-	mariadb-client \
-	nodejs-legacy \
-	npm \
-	openssh-client \
-	openssh-server \
-	postgresql-client \
-	screen \
-	telnet \
-	tmux \
-	tzdata \
+    less \
+    mariadb-client \
+    nodejs-legacy \
+    npm \
+    openssh-client \
+    openssh-server \
+    postgresql-client \
+    screen \
+    telnet \
+    tmux \
+    tzdata \
     vim \
-	wget \
+    wget \
 && rm -rf /var/lib/apt/lists/*
 
 RUN ln -fs /usr/share/zoneinfo/US/Eastern /etc/localtime && dpkg-reconfigure -f noninteractive tzdata
