@@ -16,6 +16,7 @@ RUN apt-get update && apt install -qy \
     openssh-server \
     postgresql-client \
     screen \
+    software-properties-common \
     telnet \
     tmux \
     tzdata \
