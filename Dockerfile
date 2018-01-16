@@ -2,7 +2,8 @@ FROM library/ubuntu:16.04
 MAINTAINER eric@ds-do.com
 
 RUN apt-get update && apt install -qy \
-    curl \
+	apt-transport-https \
+	curl \
     emacs24-nox \
     git \
     graphviz \
